@@ -8,7 +8,9 @@ import Home from './components/home/home.jsx'
 import About from './components/About/About.jsx'
 import Contact from './components/contact/contact.jsx'
 import User from './components/user/user.jsx'
-
+import CatalogPage from './components/catalauge/catalauge.jsx'
+import CartPage from './components/cart/cart.jsx'
+import UserProfilePage from './components/user/user.jsx'
 const router= createBrowserRouter([
   {
     path:"/",
@@ -30,8 +32,18 @@ const router= createBrowserRouter([
       },
 
       {
-        path:"/user/:id",
-        element: <User/>
+        path:"/profile/:id",
+        element: <UserProfilePage/>
+      
+      },
+      {
+        path:"/catalog",
+        element: <CatalogPage/>
+      
+      },
+      {
+        path:"/cart",
+        element: <CartPage/>
       
       }
       
