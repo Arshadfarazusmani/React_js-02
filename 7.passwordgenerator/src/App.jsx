@@ -26,7 +26,7 @@ function App() {
       pass += str.charAt(char);
     }
     setPassword(pass);
-  }, [length, numberAllowed, charAllowed]);
+  }, [length, numberAllowed, charAllowed ,setPassword]);
 
   // Function to copy the password to the clipboard
   const copyPasswordToClipboard = useCallback(() => {
