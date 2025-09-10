@@ -1,23 +1,37 @@
-import { useEffect , useState } from "react";
 
-function useCurrencyinfo(currency) {
 
-    const [data,setData]=useState({})
 
-    useEffect(()=>{
-        fetch(`https://v6.exchangerate-api.com/v6/42e8d698ca60bb22f46c9d9f/latest/${currency}`)
-        .then((res)=>res.json())
-        .then((res)=>setData(res.conversion_rates))
-        // console.log(data);
+
+
+
+
+
+
+
+
+
+
+
+// import { useEffect , useState } from "react";
+
+// function useCurrencyinfo(currency) {
+
+//     const [data,setData]=useState({})
+
+//     useEffect(()=>{
+//         fetch(`https://v6.exchangerate-api.com/v6/42e8d698ca60bb22f46c9d9f/latest/${currency}`)
+//         .then((res)=>res.json())
+//         .then((res)=>setData(res.conversion_rates))
+//         // console.log(data);
         
-    },[currency])
+//     },[currency])
 
-    return data
+//     return data
     
-}
+// }
 
 
 
 
 
-export default useCurrencyinfo ; 
+// export default useCurrencyinfo ; 
